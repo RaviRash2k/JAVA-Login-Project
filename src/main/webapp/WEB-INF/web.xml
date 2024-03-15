@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+        
+    <welcome-file-list>
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
+        
+	<servlet>
+	    <servlet-name>CusRegister</servlet-name>
+	    <servlet-class>servlets.CusRegister</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CusRegister</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	    <servlet-name>CusLogin</servlet-name>
+	    <servlet-class>servlets.CusLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CusLogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	    <servlet-name>ForgetPassword</servlet-name>
+	    <servlet-class>servlets.ForgetPassword</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ForgetPassword</servlet-name>
+		<url-pattern>/fog</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
